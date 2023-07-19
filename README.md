@@ -28,6 +28,11 @@ import { ListView } from "react-native-list";
       sectionHeader="Account list" 
       colorChevron="FFA500" />
 ```
+### Visualization
+
+![Simulator Screenshot - iPhone 14 - 2023-07-19 at 18 16 23](https://github.com/Talkwondo/react-native-list/assets/20122139/5e444be1-c628-4d19-b515-e07b61ced9b8)
+
+
 
 ## Contributing
 
