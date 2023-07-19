@@ -1,6 +1,6 @@
 {
   "name": "react-native-list-native-ui",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Create Native ui list in your react-native app",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
