@@ -6,16 +6,27 @@ Create Native ui list in your react-native app
 
 ```sh
 npm install react-native-list
+cd ios && pod install
 ```
 
 ## Usage
-
 ```js
 import { ListView } from "react-native-list";
 
 // ...
 
-<ListView color="tomato" />
+ <ListView 
+      width={width}
+      height={height}
+      listObject={listObject} 
+      colorText="FFA500"
+      onNavigate={({nativeEvent})=> {
+        navigation.navigate(nativeEvent.screen)
+      }}
+      colorIcon="FFA500" 
+      sectionButtom="configure your account list" 
+      sectionHeader="Account list" 
+      colorChevron="FFA500" />
 ```
 
 ## Contributing
