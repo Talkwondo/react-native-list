@@ -1,8 +1,4 @@
-import {
-  requireNativeComponent,
-  UIManager,
-  Platform,
-} from 'react-native';
+import { requireNativeComponent, UIManager, Platform } from 'react-native';
 
 const LINKING_ERROR =
   `The package 'react-native-list' doesn't seem to be linked. Make sure: \n\n` +
@@ -29,39 +25,47 @@ type ScreenCallback = {
   /**
    * The screen of the object in the navigate feild;
    */
-  screen: string
-}
+  screen: string;
+};
 
 interface ListProps {
- /**
+  /**
    * See interface above
    */
-  listObject: ListObject;
- /**
+  listObject: ListObject[];
+  /**
+   * width of the component
+   */
+  width: number;
+  /**
+   * height of the component
+   */
+  height: number;
+  /**
    * Color of the text in the list item, refer only hex string without #
    */
   colorText: string;
- /**
+  /**
    * Color of the icon in the list item, refer only hex string without #
    */
   colorIcon: string;
- /**
+  /**
    * Text in the bottom title
    */
-  sectionButtom?: string
- /**
+  sectionButtom?: string;
+  /**
    * Text in the bottom title
    */
   sectionHeader?: string;
- /**
+  /**
    * Color of the icon in the list item, refer only hex string without #
    */
-  colorChevron: string
- /**
+  colorChevron: string;
+  /**
    * Callback on the list item when pressed.
    */
   onNavigate: (nativeEvent: ScreenCallback) => void;
-};
+}
 
 const ComponentName = 'ListView';
 
