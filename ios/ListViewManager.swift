@@ -98,7 +98,6 @@ class ListView : UIView {
             onNavigate!(["screen":data])
         }
     }
-    
 }
 
 @available(iOS 13.0, *)

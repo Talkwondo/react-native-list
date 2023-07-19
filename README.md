@@ -12,7 +12,7 @@ cd ios && pod install
 ## Usage
 
 ```js
-import { ListView } from 'react-native-list';
+import { ListView } from 'react-native-list-native-ui';
 
 // ...
 
