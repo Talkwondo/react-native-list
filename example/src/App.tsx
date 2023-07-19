@@ -1,12 +1,31 @@
 import * as React from 'react';
 
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Dimensions } from 'react-native';
 import { ListView } from 'react-native-list';
+const {width, height} = Dimensions.get("screen")
+
+
+const listObject = [
+{icon: "lock", name: "Password", navigate: "PasswordScreen"}, 
+{icon: "barcode", name: "Scan"}
+]
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <ListView color="#32a852" style={styles.box} />
+      <ListView 
+      width={width}
+      height={height}
+      listObject={listObject} 
+      colorText="FFA500"
+      onNavigate={({nativeEvent}: any)=> {
+        console.log(nativeEvent.screen)
+      }}
+      colorIcon="FFA500" 
+      sectionButtom="configure your account list" 
+      sectionHeader="Account list" 
+      colorChevron="FFA500" />
     </View>
   );
 }
@@ -17,9 +36,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
+  testAccoung: {
+    fontSize: 15
   },
 });

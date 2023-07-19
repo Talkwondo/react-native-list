@@ -1,6 +1,6 @@
 {
   "name": "react-native-list",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Create Native ui list in your react-native app",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -41,6 +41,9 @@
   "keywords": [
     "react-native",
     "ios",
+    "list ios",
+    "list view",
+    "native ui list",
     "android"
   ],
   "repository": "https://github.com/Talkwondo/react-native-list",
