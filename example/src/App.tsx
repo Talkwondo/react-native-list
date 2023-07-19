@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Dimensions } from 'react-native';
-import { ListView } from 'react-native-list-native-ui';
+import { ListView } from 'react-native-list';
 const { width, height } = Dimensions.get('screen');
 
 const listObject = [
